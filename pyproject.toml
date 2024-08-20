@@ -1,0 +1,13 @@
+[project]
+name = "pre-commit-groovyc-wrapper"
+version = "0.0.0"
+requires-python = ">= 3.8"
+
+optional-dependencies.dev = [
+  "mypy",
+  "pytest",
+]
+scripts.pre-commit-groovyc-wrapper = "pre_commit_groovyc_wrapper.__main__:_main"
+
+[tool.mypy]
+strict = true

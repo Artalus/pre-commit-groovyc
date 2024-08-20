@@ -1,0 +1,9 @@
+- id: groovyc
+  name: groovyc
+  description: run groovyc on changed groovy files
+  entry: pre-commit-groovyc-wrapper
+  language: python
+  types_or: [groovy, jenkins]
+  require_serial: true
+  additional_dependencies: []
+  minimum_pre_commit_version: '2.9.2'
